@@ -2,10 +2,9 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Home from "./routes/home/Home.tsx"
 import Navigation from "./components/Navigation.tsx"
 import CreateAccount from './routes/createaccount/CreateAccount.tsx'
-import CreateBoard from './routes/createboard/CreateBoard.tsx'
 import Login from './routes/login/Login.tsx'
-import MyBoards from './routes/myboards/MyBoards.tsx'
 import Profile from './routes/profile/Profile.tsx'
+import Boards from "./routes/boards/Boards.tsx"
 
 const AppLayout = () => {
   return (
@@ -27,12 +26,8 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: "createboard",
-        element: <CreateBoard />
-      },
-      {
-        path: "myboards",
-        element: <MyBoards />
+        path: "boards",
+        element: <Boards />
       },
       {
         path: "profile",
