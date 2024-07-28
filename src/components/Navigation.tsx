@@ -2,7 +2,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Container from "react-bootstrap/Container"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 const Navigation = () => {
@@ -24,8 +24,7 @@ const Navigation = () => {
         <Offcanvas.Body>
           <Nav>
             <Link to="/">Home</Link>
-            <Link to="createboard">Create Board</Link>
-            <Link to="myboards">My Boards</Link>
+            <Link to="boards">Boards</Link>
             <Link to="profile">Profile Settings</Link>
             <Link to="createaccount">Create Account</Link>
             <Link to="login">Log In</Link>
